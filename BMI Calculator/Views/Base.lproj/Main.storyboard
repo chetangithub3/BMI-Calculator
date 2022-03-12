@@ -209,7 +209,9 @@
                     </view>
                     <connections>
                         <outlet property="adviceLabel" destination="9IV-CT-mxw" id="BU9-Ci-Eq2"/>
-                        <outlet property="resultLabel" destination="VU9-2W-Sd5" id="JTe-jI-diL"/>
+                        <outlet property="bmiValueLabel" destination="VU9-2W-Sd5" id="OuD-Bh-oR2"/>
+                        <outlet property="resultBackgroundImage" destination="r83-N3-Ash" id="2np-MY-Lfy"/>
+                        <outlet property="resultLabel" destination="9IV-CT-mxw" id="eQ7-ZX-8DA"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="toHome" modalTransitionStyle="crossDissolve" id="h4A-Cd-ej0"/>
                     </connections>
                 </viewController>

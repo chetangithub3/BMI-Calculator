@@ -12,13 +12,19 @@ class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        resultLabel.text = String(bmiValue)
+        bmiValueLabel.text = bmiValue
+        resultBackgroundImage.backgroundColor = bmiColor
+        resultLabel.text = bmiAdvice
         // Do any additional setup after loading the view.
     }
     
-    var bmiValue: Float = 0.0
+    var bmiValue: String = "0.0"
+    var bmiAdvice: String = "default"
+    var bmiColor: UIColor = UIColor.gray
     
+    @IBOutlet weak var bmiValueLabel: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var resultBackgroundImage: UIImageView!
     
     @IBOutlet weak var adviceLabel: UILabel!
     @IBAction func recalculateButtonPressed(_ sender: UIButton) {
